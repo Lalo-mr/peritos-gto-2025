@@ -1,0 +1,1621 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Directorio de Peritos</title>
+  <style>
+    body { font-family: 'Segoe UI', sans-serif; background: #f8f8f8; padding: 20px; }
+    h1 { text-align: center; color: #2c3e50; }
+    #searchInput {
+      display: block; margin: 10px auto 30px auto; padding: 10px;
+      font-size: 16px; width: 80%; max-width: 500px;
+      border: 1px solid #ccc; border-radius: 5px;
+    }
+    .container { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; }
+    .card {
+      width: 600px;
+      border: 1px solid #ccc;
+      background: white;
+      padding: 15px 20px;
+      display: flex;
+      gap: 20px;
+      border-radius: 5px;
+      box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+    }
+    .left { width: 140px; text-align: center; }
+    .left img { width: 100px; height: 100px; object-fit: contain; border-radius: 50%; }
+    .left .cedula { margin-top: 10px; font-size: 12px; }
+    .right { flex: 1; }
+    .nombre { color: #2c3e50; font-weight: bold; font-size: 16px; text-transform: uppercase; }
+    .titulo { color: #B39D5D; font-weight: bold; margin: 4px 0; }
+    .info { display: flex; align-items: center; margin: 6px 0; font-size: 14px; }
+    .info img { width: 20px; height: 20px; margin-right: 10px; }
+  </style>
+</head>
+<body>
+  <h1>Directorio de Peritos</h1>
+  <input type="text" id="searchInput" onkeyup="searchCards()" placeholder="Buscar por nombre o número de nombramiento...">
+  <div class="container" id="cardsContainer">
+  
+    <div class="card">
+      <div class="left">
+        <img src="https://i.imgur.com/YBARlSL.png" alt="foto">
+        <div class="cedula">
+          CED. PROF. MTRIA.<br><b>SEP: 12119304</b>
+        </div>
+      </div>
+      <div class="right">
+        <div class="nombre">ING. JOEL HUMBERTO GUTIERREZ AGUILAR </div>
+        <div class="titulo">PERITO FISCAL NO. 52 /2025</div>
+        <div class="info"><img src="https://i.imgur.com/8uc2W51.png" alt="ubicación"> Carretera a Puentecillas km.10 SN, Puentecillas, Guanajuato, GTO.</div>
+        <div class="info"><img src="https://i.imgur.com/HAZJvVz.png" alt="teléfono"> 4771588046</div>
+        <div class="info"><img src="https://i.imgur.com/UvoJ7x3.png" alt="correo"> ingaguilarg@gmail.com</div>
+      </div>
+    </div>
+  
+    <div class="card">
+      <div class="left">
+        <img src="https://i.imgur.com/HKSBBge.png" alt="foto">
+        <div class="cedula">
+          CED. PROF. LIC.<br><b>SEP: 6096124</b>
+        </div>
+      </div>
+      <div class="right">
+        <div class="nombre">ARQ. MA. ELENA GOMEZ ALBOR</div>
+        <div class="titulo">PERITO FISCAL NO. 3 /2025</div>
+        <div class="info"><img src="https://i.imgur.com/8uc2W51.png" alt="ubicación"> Circuito Napoleón Goméz Sada 5, Martires 22 de Abril, Guanajuato, GTO.</div>
+        <div class="info"><img src="https://i.imgur.com/HAZJvVz.png" alt="teléfono"> 4731218292</div>
+        <div class="info"><img src="https://i.imgur.com/UvoJ7x3.png" alt="correo"> cokie.albor712@gmail.com</div>
+      </div>
+    </div>
+  
+    <div class="card">
+      <div class="left">
+        <img src="https://i.imgur.com/YBARlSL.png" alt="foto">
+        <div class="cedula">
+          CED. PROF. ESP.V.<br><b>SEP: 10135615</b>
+        </div>
+      </div>
+      <div class="right">
+        <div class="nombre">ING. ALEJANDRO  MURILLO ALBOR</div>
+        <div class="titulo">PERITO FISCAL NO. 70 /2025</div>
+        <div class="info"><img src="https://i.imgur.com/8uc2W51.png" alt="ubicación"> Carretera Guanajuato-Marfil km. 1.6, Marfil Alto, Guanajuato, GTO.</div>
+        <div class="info"><img src="https://i.imgur.com/HAZJvVz.png" alt="teléfono"> 4454557860</div>
+        <div class="info"><img src="https://i.imgur.com/UvoJ7x3.png" alt="correo"> alejandroalbor@hotmail.com</div>
+      </div>
+    </div>
+  
+    <div class="card">
+      <div class="left">
+        <img src="https://i.imgur.com/YBARlSL.png" alt="foto">
+        <div class="cedula">
+          CED. PROF. LIC.<br><b>SEP: 1650773</b>
+        </div>
+      </div>
+      <div class="right">
+        <div class="nombre">ING. HECTOR JOSE ROJAS ALVAREZ</div>
+        <div class="titulo">PERITO FISCAL NO. 46 /2025</div>
+        <div class="info"><img src="https://i.imgur.com/8uc2W51.png" alt="ubicación"> La Quinta 4C, Marfil, Guanajuato, GTO.</div>
+        <div class="info"><img src="https://i.imgur.com/HAZJvVz.png" alt="teléfono"> 4737403062</div>
+        <div class="info"><img src="https://i.imgur.com/UvoJ7x3.png" alt="correo"> halvarezr.har@gmail.com</div>
+      </div>
+    </div>
+  
+    <div class="card">
+      <div class="left">
+        <img src="https://i.imgur.com/HKSBBge.png" alt="foto">
+        <div class="cedula">
+          CED. PROF. ESP.V.<br><b>SEP: 14369888</b>
+        </div>
+      </div>
+      <div class="right">
+        <div class="nombre">ARQ. DANIELA NOEMI  MENDOZA ARMENTA </div>
+        <div class="titulo">PERITO FISCAL NO. 56 /2025</div>
+        <div class="info"><img src="https://i.imgur.com/8uc2W51.png" alt="ubicación"> Avenida Guerrero 838, Centro, Irapuato, GTO.</div>
+        <div class="info"><img src="https://i.imgur.com/HAZJvVz.png" alt="teléfono"> 4621351711</div>
+        <div class="info"><img src="https://i.imgur.com/UvoJ7x3.png" alt="correo"> avaluosimagen@gmail.com</div>
+      </div>
+    </div>
+  
+    <div class="card">
+      <div class="left">
+        <img src="https://i.imgur.com/YBARlSL.png" alt="foto">
+        <div class="cedula">
+          CED. PROF. ESP.V.<br><b>SEP: 12404748</b>
+        </div>
+      </div>
+      <div class="right">
+        <div class="nombre">ING. ANGEL ERNESTO MEJIA ARRIAGA</div>
+        <div class="titulo">PERITO FISCAL NO. 35 /2025</div>
+        <div class="info"><img src="https://i.imgur.com/8uc2W51.png" alt="ubicación"> Avenida San Francisco 28, Lomas del Padre, Guanajuato, GTO.</div>
+        <div class="info"><img src="https://i.imgur.com/HAZJvVz.png" alt="teléfono"> 4731170186</div>
+        <div class="info"><img src="https://i.imgur.com/UvoJ7x3.png" alt="correo"> aeamejia1964@gmail.com</div>
+      </div>
+    </div>
+  
+    <div class="card">
+      <div class="left">
+        <img src="https://i.imgur.com/HKSBBge.png" alt="foto">
+        <div class="cedula">
+          CED. PROF. LIC.<br><b>SEP: 11780131</b>
+        </div>
+      </div>
+      <div class="right">
+        <div class="nombre">ARQ. ALBA DAFNE ANGELES AVIÑA</div>
+        <div class="titulo">PERITO FISCAL NO. 58 /2025</div>
+        <div class="info"><img src="https://i.imgur.com/8uc2W51.png" alt="ubicación"> Villa Grande de La Luz 9A, Villanueva, Guanajuato, GTO.</div>
+        <div class="info"><img src="https://i.imgur.com/HAZJvVz.png" alt="teléfono"> 4731005826</div>
+        <div class="info"><img src="https://i.imgur.com/UvoJ7x3.png" alt="correo"> dafneavina.ad@gmail.com</div>
+      </div>
+    </div>
+  
+    <div class="card">
+      <div class="left">
+        <img src="https://i.imgur.com/HKSBBge.png" alt="foto">
+        <div class="cedula">
+          CED. PROF. ESP.V.<br><b>SEP: 12427111</b>
+        </div>
+      </div>
+      <div class="right">
+        <div class="nombre">ARQ. BLANCA ESTELA PARADA BALDERAS</div>
+        <div class="titulo">PERITO FISCAL NO. 40 /2025</div>
+        <div class="info"><img src="https://i.imgur.com/8uc2W51.png" alt="ubicación"> Callejón de los Imposibles 17, Pastita , Guanajuato, GTO.</div>
+        <div class="info"><img src="https://i.imgur.com/HAZJvVz.png" alt="teléfono"> 4737562960</div>
+        <div class="info"><img src="https://i.imgur.com/UvoJ7x3.png" alt="correo"> blanbalpa@gmail.com</div>
+      </div>
+    </div>
+  
+    <div class="card">
+      <div class="left">
+        <img src="https://i.imgur.com/YBARlSL.png" alt="foto">
+        <div class="cedula">
+          CED. PROF. LIC.<br><b>SEP: 169130</b>
+        </div>
+      </div>
+      <div class="right">
+        <div class="nombre">ING. LUIS REYES BARRON</div>
+        <div class="titulo">PERITO FISCAL NO. 16 /2025</div>
+        <div class="info"><img src="https://i.imgur.com/8uc2W51.png" alt="ubicación"> Sección 7 Casa 16, Noria Alta, Guanajuato, GTO.</div>
+        <div class="info"><img src="https://i.imgur.com/HAZJvVz.png" alt="teléfono"> 4737323673</div>
+        <div class="info"><img src="https://i.imgur.com/UvoJ7x3.png" alt="correo"> luis4307@gmail.com</div>
+      </div>
+    </div>
+  
+    <div class="card">
+      <div class="left">
+        <img src="https://i.imgur.com/HKSBBge.png" alt="foto">
+        <div class="cedula">
+          CED. PROF. LIC.<br><b>SEP: 6689345</b>
+        </div>
+      </div>
+      <div class="right">
+        <div class="nombre">ARQ. ANA CRISTINA SAMAME CABREJOS</div>
+        <div class="titulo">PERITO FISCAL NO. 41 /2025</div>
+        <div class="info"><img src="https://i.imgur.com/8uc2W51.png" alt="ubicación"> Sección 8 Casa 12 , Noria Alta, Guanajuato, GTO.</div>
+        <div class="info"><img src="https://i.imgur.com/HAZJvVz.png" alt="teléfono"> 4737324685</div>
+        <div class="info"><img src="https://i.imgur.com/UvoJ7x3.png" alt="correo"> arq.cabrejos@gmail.com</div>
+      </div>
+    </div>
+  
+    <div class="card">
+      <div class="left">
+        <img src="https://i.imgur.com/YBARlSL.png" alt="foto">
+        <div class="cedula">
+          CED. PROF. LIC.<br><b>SEP: 3151298</b>
+        </div>
+      </div>
+      <div class="right">
+        <div class="nombre">ARQ. SERGIO GUTIERREZ CABRERA</div>
+        <div class="titulo">PERITO FISCAL NO. 17 /2025</div>
+        <div class="info"><img src="https://i.imgur.com/8uc2W51.png" alt="ubicación"> Callejón San Agustin 49, Paseo de la Presa, Guanajuato, GTO.</div>
+        <div class="info"><img src="https://i.imgur.com/HAZJvVz.png" alt="teléfono"> 4737310645</div>
+        <div class="info"><img src="https://i.imgur.com/UvoJ7x3.png" alt="correo"> valuacioncagsa@gmail.com</div>
+      </div>
+    </div>
+  
+    <div class="card">
+      <div class="left">
+        <img src="https://i.imgur.com/YBARlSL.png" alt="foto">
+        <div class="cedula">
+          CED. PROF. LIC.<br><b>SEP: 1817541</b>
+        </div>
+      </div>
+      <div class="right">
+        <div class="nombre">ING. LUIS FERNANDO ZAVALA CAMPOS</div>
+        <div class="titulo">PERITO FISCAL NO. 38 /2025</div>
+        <div class="info"><img src="https://i.imgur.com/8uc2W51.png" alt="ubicación"> Pedro de Nápoles 53, Mineral de La Hacienda, Guanajuato, GTO.</div>
+        <div class="info"><img src="https://i.imgur.com/HAZJvVz.png" alt="teléfono"> 4731090271</div>
+        <div class="info"><img src="https://i.imgur.com/UvoJ7x3.png" alt="correo"> ingfecaza@hotmail.com</div>
+      </div>
+    </div>
+  
+    <div class="card">
+      <div class="left">
+        <img src="https://i.imgur.com/YBARlSL.png" alt="foto">
+        <div class="cedula">
+          CED. PROF. LIC.<br><b>SEP: 8740303</b>
+        </div>
+      </div>
+      <div class="right">
+        <div class="nombre">ING. JUAN ANGEL BARAJAS CANO</div>
+        <div class="titulo">PERITO FISCAL NO. 74 /2025</div>
+        <div class="info"><img src="https://i.imgur.com/8uc2W51.png" alt="ubicación"> Carretera Panoramica Letra B SN, Calzada de Guadalupe, Guanajuato, GTO.</div>
+        <div class="info"><img src="https://i.imgur.com/HAZJvVz.png" alt="teléfono"> 4737340710</div>
+        <div class="info"><img src="https://i.imgur.com/UvoJ7x3.png" alt="correo"> canoangel89@gmail.com</div>
+      </div>
+    </div>
+  
+    <div class="card">
+      <div class="left">
+        <img src="https://i.imgur.com/YBARlSL.png" alt="foto">
+        <div class="cedula">
+          CED. PROF. LIC.<br><b>SEP: 3151060</b>
+        </div>
+      </div>
+      <div class="right">
+        <div class="nombre">ING. ARTURO ARRONA CARDENAS</div>
+        <div class="titulo">PERITO FISCAL NO. 12 /2025</div>
+        <div class="info"><img src="https://i.imgur.com/8uc2W51.png" alt="ubicación"> Calle Juan Aldama 15, Piloto, Guanajuato, GTO.</div>
+        <div class="info"><img src="https://i.imgur.com/HAZJvVz.png" alt="teléfono"> 4731190571</div>
+        <div class="info"><img src="https://i.imgur.com/UvoJ7x3.png" alt="correo"> arturocarrona@gmail.com</div>
+      </div>
+    </div>
+  
+    <div class="card">
+      <div class="left">
+        <img src="https://i.imgur.com/YBARlSL.png" alt="foto">
+        <div class="cedula">
+          CED. PROF. MTRIA.<br><b>SEP: 14127080</b>
+        </div>
+      </div>
+      <div class="right">
+        <div class="nombre">ING.  CARLOS  FIGUEROA CARDENAS</div>
+        <div class="titulo">PERITO FISCAL NO. 93 /2025</div>
+        <div class="info"><img src="https://i.imgur.com/8uc2W51.png" alt="ubicación"> Circuito Villa Purísima del Rincón, Villas de Guanajuato, Guanajuato, GTO.</div>
+        <div class="info"><img src="https://i.imgur.com/HAZJvVz.png" alt="teléfono"> 4771310026</div>
+        <div class="info"><img src="https://i.imgur.com/UvoJ7x3.png" alt="correo"> ingccardenasf@gmail.com</div>
+      </div>
+    </div>
+  
+    <div class="card">
+      <div class="left">
+        <img src="https://i.imgur.com/HKSBBge.png" alt="foto">
+        <div class="cedula">
+          CED. PROF. ESP.V.<br><b>SEP: 9626679</b>
+        </div>
+      </div>
+      <div class="right">
+        <div class="nombre">ARQ. SANDRA LIZETH MARTINEZ CARRILLO</div>
+        <div class="titulo">PERITO FISCAL NO. 50 /2025</div>
+        <div class="info"><img src="https://i.imgur.com/8uc2W51.png" alt="ubicación"> Calle del Pulque 57, Yerbabuena, Guanajuato, GTO.</div>
+        <div class="info"><img src="https://i.imgur.com/HAZJvVz.png" alt="teléfono"> 4731171780</div>
+        <div class="info"><img src="https://i.imgur.com/UvoJ7x3.png" alt="correo"> arqsandy.carrillo@gmail.com</div>
+      </div>
+    </div>
+  
+    <div class="card">
+      <div class="left">
+        <img src="https://i.imgur.com/YBARlSL.png" alt="foto">
+        <div class="cedula">
+          CED. PROF. LIC.<br><b>SEG: 11131</b>
+        </div>
+      </div>
+      <div class="right">
+        <div class="nombre">ING. FRANCISCO JOSE HERNANDEZ CERVANTES</div>
+        <div class="titulo">PERITO FISCAL NO. 77 /2025</div>
+        <div class="info"><img src="https://i.imgur.com/8uc2W51.png" alt="ubicación"> Higuera SN, Yerbabuena, Guanajuato, GTO.</div>
+        <div class="info"><img src="https://i.imgur.com/HAZJvVz.png" alt="teléfono"> 4736907560</div>
+        <div class="info"><img src="https://i.imgur.com/UvoJ7x3.png" alt="correo"> esco.design1@gmail.com</div>
+      </div>
+    </div>
+  
+    <div class="card">
+      <div class="left">
+        <img src="https://i.imgur.com/YBARlSL.png" alt="foto">
+        <div class="cedula">
+          CED. PROF. ESP.V.<br><b>SEP: 11175789</b>
+        </div>
+      </div>
+      <div class="right">
+        <div class="nombre">ARQ. JOSE ALEJANDRO MUÑOZ CORTES</div>
+        <div class="titulo">PERITO FISCAL NO. 31 /2025</div>
+        <div class="info"><img src="https://i.imgur.com/8uc2W51.png" alt="ubicación"> Hda. San Nicolas de los Agustinos 7 int. 7, Ex Hda. Santa Teresa, Guanajuato, GTO.</div>
+        <div class="info"><img src="https://i.imgur.com/HAZJvVz.png" alt="teléfono"> 4775187118</div>
+        <div class="info"><img src="https://i.imgur.com/UvoJ7x3.png" alt="correo"> arqcortesm@gmail.com</div>
+      </div>
+    </div>
+  
+    <div class="card">
+      <div class="left">
+        <img src="https://i.imgur.com/YBARlSL.png" alt="foto">
+        <div class="cedula">
+          CED. PROF. ESP.V.<br><b>SEP: 7046353</b>
+        </div>
+      </div>
+      <div class="right">
+        <div class="nombre">ARQ. EDGAR ALEJANDRO SANDOVAL DEL CAMPO</div>
+        <div class="titulo">PERITO FISCAL NO. 8 /2025</div>
+        <div class="info"><img src="https://i.imgur.com/8uc2W51.png" alt="ubicación"> Carretera a Puentecillas km. 0.5 SN, Yerbabuena, Guanajuato, GTO.</div>
+        <div class="info"><img src="https://i.imgur.com/HAZJvVz.png" alt="teléfono"> 4731119027</div>
+        <div class="info"><img src="https://i.imgur.com/UvoJ7x3.png" alt="correo"> vvaluarq@gmail.com</div>
+      </div>
+    </div>
+  
+    <div class="card">
+      <div class="left">
+        <img src="https://i.imgur.com/YBARlSL.png" alt="foto">
+        <div class="cedula">
+          CED. PROF. MTRIA.<br><b>SEP: 7404781</b>
+        </div>
+      </div>
+      <div class="right">
+        <div class="nombre">ING. LUIS ANTONIO HERNANDEZ DURAN</div>
+        <div class="titulo">PERITO FISCAL NO. 48 /2025</div>
+        <div class="info"><img src="https://i.imgur.com/8uc2W51.png" alt="ubicación"> Calle Vicente Guerrero 8, Centro, Silao, GTO.</div>
+        <div class="info"><img src="https://i.imgur.com/HAZJvVz.png" alt="teléfono"> 4773268160</div>
+        <div class="info"><img src="https://i.imgur.com/UvoJ7x3.png" alt="correo"> luishernandez156@hotmail.com</div>
+      </div>
+    </div>
+  
+    <div class="card">
+      <div class="left">
+        <img src="https://i.imgur.com/YBARlSL.png" alt="foto">
+        <div class="cedula">
+          CED. PROF. ESP.V.<br><b>SEP: 15482</b>
+        </div>
+      </div>
+      <div class="right">
+        <div class="nombre">ING. MARTIN MONTES FERNANDEZ</div>
+        <div class="titulo">PERITO FISCAL NO. 60 /2025</div>
+        <div class="info"><img src="https://i.imgur.com/8uc2W51.png" alt="ubicación"> J. Jesús Rodríguez Gaona 11, Presa de Los Santos, Guanajuato, GTO.</div>
+        <div class="info"><img src="https://i.imgur.com/HAZJvVz.png" alt="teléfono"> 4737404869</div>
+        <div class="info"><img src="https://i.imgur.com/UvoJ7x3.png" alt="correo"> mfmontes1963@gmail.com</div>
+      </div>
+    </div>
+  
+    <div class="card">
+      <div class="left">
+        <img src="https://i.imgur.com/YBARlSL.png" alt="foto">
+        <div class="cedula">
+          CED. PROF. LIC.<br><b>SEP: 13401599</b>
+        </div>
+      </div>
+      <div class="right">
+        <div class="nombre">ING.  VICTOR GUILLERMO RODRIGUEZ FLORES </div>
+        <div class="titulo">PERITO FISCAL NO. 88 /2025</div>
+        <div class="info"><img src="https://i.imgur.com/8uc2W51.png" alt="ubicación"> Circuito Villa Silao, Villas de Guanajuato, Guanajuato, GTO.</div>
+        <div class="info"><img src="https://i.imgur.com/HAZJvVz.png" alt="teléfono"> 4731205785</div>
+        <div class="info"><img src="https://i.imgur.com/UvoJ7x3.png" alt="correo"> geoproyectosglobales@gmail.com</div>
+      </div>
+    </div>
+  
+    <div class="card">
+      <div class="left">
+        <img src="https://i.imgur.com/YBARlSL.png" alt="foto">
+        <div class="cedula">
+          CED. PROF. LIC.<br><b>SEP: 11114006</b>
+        </div>
+      </div>
+      <div class="right">
+        <div class="nombre">ARQ. JESUS RICARDO GARCIA GALLO</div>
+        <div class="titulo">PERITO FISCAL NO. 54 /2025</div>
+        <div class="info"><img src="https://i.imgur.com/8uc2W51.png" alt="ubicación"> Ajacuba 32A, Manatial, Guanajuato, GTO.</div>
+        <div class="info"><img src="https://i.imgur.com/HAZJvVz.png" alt="teléfono"> 4731149975</div>
+        <div class="info"><img src="https://i.imgur.com/UvoJ7x3.png" alt="correo"> jrgallogarcia@gmail.com</div>
+      </div>
+    </div>
+  
+    <div class="card">
+      <div class="left">
+        <img src="https://i.imgur.com/YBARlSL.png" alt="foto">
+        <div class="cedula">
+          CED. PROF. LIC.<br><b>SEP: 1647456</b>
+        </div>
+      </div>
+      <div class="right">
+        <div class="nombre">ING. J. JESUS MARTINEZ GALVAN</div>
+        <div class="titulo">PERITO FISCAL NO. 55 /2025</div>
+        <div class="info"><img src="https://i.imgur.com/8uc2W51.png" alt="ubicación"> Ramon Fabie 31, Mineral de La Hda., Guanajuato, GTO.</div>
+        <div class="info"><img src="https://i.imgur.com/HAZJvVz.png" alt="teléfono"> 4731166345</div>
+        <div class="info"><img src="https://i.imgur.com/UvoJ7x3.png" alt="correo"> galmarje@gmail.com</div>
+      </div>
+    </div>
+  
+    <div class="card">
+      <div class="left">
+        <img src="https://i.imgur.com/YBARlSL.png" alt="foto">
+        <div class="cedula">
+          CED. PROF. LIC.<br><b>SEP: 12212345</b>
+        </div>
+      </div>
+      <div class="right">
+        <div class="nombre">ING. GONZALO CABRERA GALVAN</div>
+        <div class="titulo">PERITO FISCAL NO. 83 /2025</div>
+        <div class="info"><img src="https://i.imgur.com/8uc2W51.png" alt="ubicación"> Callejón Transversal de Pardo 84, Centro, Guanajuato, GTO.</div>
+        <div class="info"><img src="https://i.imgur.com/HAZJvVz.png" alt="teléfono"> 4731399480</div>
+        <div class="info"><img src="https://i.imgur.com/UvoJ7x3.png" alt="correo"> gonzagalvan.ic1986@gmail.com</div>
+      </div>
+    </div>
+  
+    <div class="card">
+      <div class="left">
+        <img src="https://i.imgur.com/YBARlSL.png" alt="foto">
+        <div class="cedula">
+          CED. PROF. LIC.<br><b>SEP: 5804252</b>
+        </div>
+      </div>
+      <div class="right">
+        <div class="nombre">ING. CRISTIAN IVAN GARCIA GAMEZ</div>
+        <div class="titulo">PERITO FISCAL NO. 18 /2025</div>
+        <div class="info"><img src="https://i.imgur.com/8uc2W51.png" alt="ubicación"> Callejón del Grasero 18A, Centro, Guanajuato, GTO.</div>
+        <div class="info"><img src="https://i.imgur.com/HAZJvVz.png" alt="teléfono"> 4737328254</div>
+        <div class="info"><img src="https://i.imgur.com/UvoJ7x3.png" alt="correo"> valuadorguanajuato@gmail.com</div>
+      </div>
+    </div>
+  
+    <div class="card">
+      <div class="left">
+        <img src="https://i.imgur.com/HKSBBge.png" alt="foto">
+        <div class="cedula">
+          CED. PROF. LIC.<br><b>SEP: 4594915</b>
+        </div>
+      </div>
+      <div class="right">
+        <div class="nombre">ARQ. JOSEFINA ARREDONDO GARCIA</div>
+        <div class="titulo">PERITO FISCAL NO. 19 /2025</div>
+        <div class="info"><img src="https://i.imgur.com/8uc2W51.png" alt="ubicación"> Pozo de la Peña 12 Altos, Marfil, Guanajuato, GTO.</div>
+        <div class="info"><img src="https://i.imgur.com/HAZJvVz.png" alt="teléfono"> 4736529203</div>
+        <div class="info"><img src="https://i.imgur.com/UvoJ7x3.png" alt="correo"> arq.josefina.garciaa@gmail.com</div>
+      </div>
+    </div>
+  
+    <div class="card">
+      <div class="left">
+        <img src="https://i.imgur.com/YBARlSL.png" alt="foto">
+        <div class="cedula">
+          CED. PROF. LIC.<br><b>SEP: 13192500</b>
+        </div>
+      </div>
+      <div class="right">
+        <div class="nombre">ING. JUAN RICARDO GONZALEZ GARCIA</div>
+        <div class="titulo">PERITO FISCAL NO. 67 /2025</div>
+        <div class="info"><img src="https://i.imgur.com/8uc2W51.png" alt="ubicación"> Yuriria 9, Santa Teresa, Guanajuato, GTO.</div>
+        <div class="info"><img src="https://i.imgur.com/HAZJvVz.png" alt="teléfono"> 4731622695</div>
+        <div class="info"><img src="https://i.imgur.com/UvoJ7x3.png" alt="correo"> rgg1992@hotmail.com</div>
+      </div>
+    </div>
+  
+    <div class="card">
+      <div class="left">
+        <img src="https://i.imgur.com/HKSBBge.png" alt="foto">
+        <div class="cedula">
+          CED. PROF. ESP.V.<br><b>SEP: 11176807</b>
+        </div>
+      </div>
+      <div class="right">
+        <div class="nombre">ARQ. EVA MARTHA MENDEZ GONZALEZ</div>
+        <div class="titulo">PERITO FISCAL NO. 42 /2025</div>
+        <div class="info"><img src="https://i.imgur.com/8uc2W51.png" alt="ubicación"> Callejón de Silva 79, Pastita, Guanajuato, GTO.</div>
+        <div class="info"><img src="https://i.imgur.com/HAZJvVz.png" alt="teléfono"> 4737310134</div>
+        <div class="info"><img src="https://i.imgur.com/UvoJ7x3.png" alt="correo"> evamartha@yahoo.com</div>
+      </div>
+    </div>
+  
+    <div class="card">
+      <div class="left">
+        <img src="https://i.imgur.com/HKSBBge.png" alt="foto">
+        <div class="cedula">
+          CED. PROF. ESP.V.<br><b>SEP: 14595912</b>
+        </div>
+      </div>
+      <div class="right">
+        <div class="nombre">ARQ. JOHNNY SANDEE MORALES GONZALEZ</div>
+        <div class="titulo">PERITO FISCAL NO. 49 /2025</div>
+        <div class="info"><img src="https://i.imgur.com/8uc2W51.png" alt="ubicación"> Cordillera Arakan Lote 21, #46, Lomas de Marfil I, Guanajuato, GTO.</div>
+        <div class="info"><img src="https://i.imgur.com/HAZJvVz.png" alt="teléfono"> 4735979064</div>
+        <div class="info"><img src="https://i.imgur.com/UvoJ7x3.png" alt="correo"> sendygm@hotmail.com</div>
+      </div>
+    </div>
+  
+    <div class="card">
+      <div class="left">
+        <img src="https://i.imgur.com/YBARlSL.png" alt="foto">
+        <div class="cedula">
+          CED. PROF. LIC.<br><b>SEP: 5399689</b>
+        </div>
+      </div>
+      <div class="right">
+        <div class="nombre">ARQ. OSCAR RICARDO ROJAS GUERRERO</div>
+        <div class="titulo">PERITO FISCAL NO. 10 /2025</div>
+        <div class="info"><img src="https://i.imgur.com/8uc2W51.png" alt="ubicación"> Cactus 20-A, Burocrata, Guanajuato, GTO.</div>
+        <div class="info"><img src="https://i.imgur.com/HAZJvVz.png" alt="teléfono"> 4731171957</div>
+        <div class="info"><img src="https://i.imgur.com/UvoJ7x3.png" alt="correo"> orguerreror@gmail.com</div>
+      </div>
+    </div>
+  
+    <div class="card">
+      <div class="left">
+        <img src="https://i.imgur.com/YBARlSL.png" alt="foto">
+        <div class="cedula">
+          CED. PROF. LIC.<br><b>SEP: 2179250</b>
+        </div>
+      </div>
+      <div class="right">
+        <div class="nombre">ING. JUAN SILVESTRE RAMIREZ GUTIERREZ </div>
+        <div class="titulo">PERITO FISCAL NO. 89 /2025</div>
+        <div class="info"><img src="https://i.imgur.com/8uc2W51.png" alt="ubicación"> Sangre de Cristo 21, Centro, Guanajuato, GTO.</div>
+        <div class="info"><img src="https://i.imgur.com/HAZJvVz.png" alt="teléfono"> 4778488709</div>
+        <div class="info"><img src="https://i.imgur.com/UvoJ7x3.png" alt="correo"> silvestre69a@gmail.com</div>
+      </div>
+    </div>
+  
+    <div class="card">
+      <div class="left">
+        <img src="https://i.imgur.com/YBARlSL.png" alt="foto">
+        <div class="cedula">
+          CED. PROF. ESP.V.<br><b>SEP: 11626941</b>
+        </div>
+      </div>
+      <div class="right">
+        <div class="nombre">ING. JUAN RICARDO SILVA HARO</div>
+        <div class="titulo">PERITO FISCAL NO. 45 /2025</div>
+        <div class="info"><img src="https://i.imgur.com/8uc2W51.png" alt="ubicación"> Boulevard Mariano Escobedo 1502-3, Loma Bonita, León, GTO.</div>
+        <div class="info"><img src="https://i.imgur.com/HAZJvVz.png" alt="teléfono"> 4774011799</div>
+        <div class="info"><img src="https://i.imgur.com/UvoJ7x3.png" alt="correo"> datateron@gmail.com</div>
+      </div>
+    </div>
+  
+    <div class="card">
+      <div class="left">
+        <img src="https://i.imgur.com/YBARlSL.png" alt="foto">
+        <div class="cedula">
+          CED. PROF. LIC.<br><b>SEP: 3944857</b>
+        </div>
+      </div>
+      <div class="right">
+        <div class="nombre">ING. OSCAR FELIPE MOLINA HERNANDEZ</div>
+        <div class="titulo">PERITO FISCAL NO. 57 /2025</div>
+        <div class="info"><img src="https://i.imgur.com/8uc2W51.png" alt="ubicación"> Andador La Molinera Mza 6, Lote 12-A, Las Teresas, Guanajuato, GTO.</div>
+        <div class="info"><img src="https://i.imgur.com/HAZJvVz.png" alt="teléfono"> 4731242817</div>
+        <div class="info"><img src="https://i.imgur.com/UvoJ7x3.png" alt="correo"> oscfher@gmail.com</div>
+      </div>
+    </div>
+  
+    <div class="card">
+      <div class="left">
+        <img src="https://i.imgur.com/YBARlSL.png" alt="foto">
+        <div class="cedula">
+          CED. PROF. LIC.<br><b>SEP: 10009741</b>
+        </div>
+      </div>
+      <div class="right">
+        <div class="nombre">ARQ. RICARDO RODRIGUEZ HERNANDEZ</div>
+        <div class="titulo">PERITO FISCAL NO. 79 /2025</div>
+        <div class="info"><img src="https://i.imgur.com/8uc2W51.png" alt="ubicación"> Boulevard Guanajuato 42B, Loma Bonita, Guanajuato, GTO.</div>
+        <div class="info"><img src="https://i.imgur.com/HAZJvVz.png" alt="teléfono"> 4735978286</div>
+        <div class="info"><img src="https://i.imgur.com/UvoJ7x3.png" alt="correo"> rick182009ma@gmail.com</div>
+      </div>
+    </div>
+  
+    <div class="card">
+      <div class="left">
+        <img src="https://i.imgur.com/YBARlSL.png" alt="foto">
+        <div class="cedula">
+          CED. PROF. LIC.<br><b>SEP: 3402129</b>
+        </div>
+      </div>
+      <div class="right">
+        <div class="nombre">ING. DAVID RAMOS HERRERA</div>
+        <div class="titulo">PERITO FISCAL NO. 64 /2025</div>
+        <div class="info"><img src="https://i.imgur.com/8uc2W51.png" alt="ubicación"> Privada San Bernardo 8, Las Granjas, Guanajuato, GTO.</div>
+        <div class="info"><img src="https://i.imgur.com/HAZJvVz.png" alt="teléfono"> 4737345926</div>
+        <div class="info"><img src="https://i.imgur.com/UvoJ7x3.png" alt="correo"> ingenio2007@gmail.com</div>
+      </div>
+    </div>
+  
+    <div class="card">
+      <div class="left">
+        <img src="https://i.imgur.com/YBARlSL.png" alt="foto">
+        <div class="cedula">
+          CED. PROF. ESP.V.<br><b>SEP: 14279932</b>
+        </div>
+      </div>
+      <div class="right">
+        <div class="nombre">ING. NOEL EDUARDO  ARIAS HUERTA </div>
+        <div class="titulo">PERITO FISCAL NO. 87 /2025</div>
+        <div class="info"><img src="https://i.imgur.com/8uc2W51.png" alt="ubicación"> Cuzama 17, Manantial, Guanajuato, GTO.</div>
+        <div class="info"><img src="https://i.imgur.com/HAZJvVz.png" alt="teléfono"> 4731655861</div>
+        <div class="info"><img src="https://i.imgur.com/UvoJ7x3.png" alt="correo"> ingnoelhuerta2025@gmail.com</div>
+      </div>
+    </div>
+  
+    <div class="card">
+      <div class="left">
+        <img src="https://i.imgur.com/YBARlSL.png" alt="foto">
+        <div class="cedula">
+          CED. PROF. LIC.<br><b>SEP: 1650695</b>
+        </div>
+      </div>
+      <div class="right">
+        <div class="nombre">ARQ. CATARINO ROGELIO ALVAREZ IBARRA</div>
+        <div class="titulo">PERITO FISCAL NO. 84 /2025</div>
+        <div class="info"><img src="https://i.imgur.com/8uc2W51.png" alt="ubicación"> Mineral de Valenciana 74, Marfil, Guanajuato, GTO.</div>
+        <div class="info"><img src="https://i.imgur.com/HAZJvVz.png" alt="teléfono"> 4731477090</div>
+        <div class="info"><img src="https://i.imgur.com/UvoJ7x3.png" alt="correo"> rogibaal@yahoo.com.mx</div>
+      </div>
+    </div>
+  
+    <div class="card">
+      <div class="left">
+        <img src="https://i.imgur.com/YBARlSL.png" alt="foto">
+        <div class="cedula">
+          CED. PROF. LIC.<br><b>SEP: 8419138</b>
+        </div>
+      </div>
+      <div class="right">
+        <div class="nombre">ARQ. JOSE PUGA JUAREZ</div>
+        <div class="titulo">PERITO FISCAL NO. 98 /2025</div>
+        <div class="info"><img src="https://i.imgur.com/8uc2W51.png" alt="ubicación"> Andador Fernando V Mza 31, Lote 5B, Las Teresas, Guanajuato, GTO.</div>
+        <div class="info"><img src="https://i.imgur.com/HAZJvVz.png" alt="teléfono"> 4731008455</div>
+        <div class="info"><img src="https://i.imgur.com/UvoJ7x3.png" alt="correo"> ark_j2pug@hotmail.com</div>
+      </div>
+    </div>
+  
+    <div class="card">
+      <div class="left">
+        <img src="https://i.imgur.com/YBARlSL.png" alt="foto">
+        <div class="cedula">
+          CED. PROF. LIC.<br><b>SEP: 12926574</b>
+        </div>
+      </div>
+      <div class="right">
+        <div class="nombre">ING. OMAR ALEJANDRO AVILA LANDEROS</div>
+        <div class="titulo">PERITO FISCAL NO. 73 /2025</div>
+        <div class="info"><img src="https://i.imgur.com/8uc2W51.png" alt="ubicación"> Yerbabuena 32, Yerbabuena, Guanajuato, GTO.</div>
+        <div class="info"><img src="https://i.imgur.com/HAZJvVz.png" alt="teléfono"> 4181810149</div>
+        <div class="info"><img src="https://i.imgur.com/UvoJ7x3.png" alt="correo"> alejandro270159@gmail.com</div>
+      </div>
+    </div>
+  
+    <div class="card">
+      <div class="left">
+        <img src="https://i.imgur.com/YBARlSL.png" alt="foto">
+        <div class="cedula">
+          CED. PROF. LIC.<br><b>SEG: 9720</b>
+        </div>
+      </div>
+      <div class="right">
+        <div class="nombre">ING.  DAVID  ASCENCIO LOPEZ</div>
+        <div class="titulo">PERITO FISCAL NO. 94 /2025</div>
+        <div class="info"><img src="https://i.imgur.com/8uc2W51.png" alt="ubicación"> Guadalupe Victoria 170, Independencia, Guanajuato, GTO.</div>
+        <div class="info"><img src="https://i.imgur.com/HAZJvVz.png" alt="teléfono"> 4775862519</div>
+        <div class="info"><img src="https://i.imgur.com/UvoJ7x3.png" alt="correo"> david.lopeza0406@gmail.com</div>
+      </div>
+    </div>
+  
+    <div class="card">
+      <div class="left">
+        <img src="https://i.imgur.com/HKSBBge.png" alt="foto">
+        <div class="cedula">
+          CED. PROF. ESP.V.<br><b>SEP: 7784705</b>
+        </div>
+      </div>
+      <div class="right">
+        <div class="nombre">ARQ. LISSETT JACOBO LUNA</div>
+        <div class="titulo">PERITO FISCAL NO. 72 /2025</div>
+        <div class="info"><img src="https://i.imgur.com/8uc2W51.png" alt="ubicación"> Balcon de La Bufa 34, Balcones de Santa Fe, Guanajuato, GTO.</div>
+        <div class="info"><img src="https://i.imgur.com/HAZJvVz.png" alt="teléfono"> 4621023054</div>
+        <div class="info"><img src="https://i.imgur.com/UvoJ7x3.png" alt="correo"> lissettluna@hotmail.com</div>
+      </div>
+    </div>
+  
+    <div class="card">
+      <div class="left">
+        <img src="https://i.imgur.com/YBARlSL.png" alt="foto">
+        <div class="cedula">
+          CED. PROF. LIC.<br><b>SEP: 959175</b>
+        </div>
+      </div>
+      <div class="right">
+        <div class="nombre">ING. SERAFIN JUAREZ MARIQUEZ</div>
+        <div class="titulo">PERITO FISCAL NO. 80 /2025</div>
+        <div class="info"><img src="https://i.imgur.com/8uc2W51.png" alt="ubicación"> Callejón de San Antonio 9, Paseo de La Presa, Guanajuato, GTO.</div>
+        <div class="info"><img src="https://i.imgur.com/HAZJvVz.png" alt="teléfono"> 4731046293</div>
+        <div class="info"><img src="https://i.imgur.com/UvoJ7x3.png" alt="correo"> serafinmanriquez487@gmail.com</div>
+      </div>
+    </div>
+  
+    <div class="card">
+      <div class="left">
+        <img src="https://i.imgur.com/HKSBBge.png" alt="foto">
+        <div class="cedula">
+          CED. PROF. ESP.V.<br><b>SEP: 11773203</b>
+        </div>
+      </div>
+      <div class="right">
+        <div class="nombre">ARQ. CLAUDIA VELAZQUEZ  MARMOLEJO</div>
+        <div class="titulo">PERITO FISCAL NO. 43 /2025</div>
+        <div class="info"><img src="https://i.imgur.com/8uc2W51.png" alt="ubicación"> Ex Hda. de San Clemente 29, Marfil, Guanajuato, GTO.</div>
+        <div class="info"><img src="https://i.imgur.com/HAZJvVz.png" alt="teléfono"> 4731416230</div>
+        <div class="info"><img src="https://i.imgur.com/UvoJ7x3.png" alt="correo"> arqmarmolejo@gmail.com</div>
+      </div>
+    </div>
+  
+    <div class="card">
+      <div class="left">
+        <img src="https://i.imgur.com/YBARlSL.png" alt="foto">
+        <div class="cedula">
+          CED. PROF. LIC.<br><b>SEP: 13642858</b>
+        </div>
+      </div>
+      <div class="right">
+        <div class="nombre">ING.  JESUS ANTONIO  VELEZ MARQUEZ</div>
+        <div class="titulo">PERITO FISCAL NO. 91 /2025</div>
+        <div class="info"><img src="https://i.imgur.com/8uc2W51.png" alt="ubicación"> Calle sin nombre SN, Localidad Montecillo, GUANAJUATO</div>
+        <div class="info"><img src="https://i.imgur.com/HAZJvVz.png" alt="teléfono"> 4737347065</div>
+        <div class="info"><img src="https://i.imgur.com/UvoJ7x3.png" alt="correo"> antoniomarquez240@gmail.com</div>
+      </div>
+    </div>
+  
+    <div class="card">
+      <div class="left">
+        <img src="https://i.imgur.com/YBARlSL.png" alt="foto">
+        <div class="cedula">
+          CED. PROF. LIC.<br><b>SEP: 2007547</b>
+        </div>
+      </div>
+      <div class="right">
+        <div class="nombre">ING. JUAN CARLOS J. D.  ARRONA MARTINEZ</div>
+        <div class="titulo">PERITO FISCAL NO. 6 /2025</div>
+        <div class="info"><img src="https://i.imgur.com/8uc2W51.png" alt="ubicación"> Callejón Cañadita de Vazquez 15 , Pastita, Guanajuato, GTO.</div>
+        <div class="info"><img src="https://i.imgur.com/HAZJvVz.png" alt="teléfono"> 4731295540</div>
+        <div class="info"><img src="https://i.imgur.com/UvoJ7x3.png" alt="correo"> jc.martinezarrona1818@gmail.com</div>
+      </div>
+    </div>
+  
+    <div class="card">
+      <div class="left">
+        <img src="https://i.imgur.com/HKSBBge.png" alt="foto">
+        <div class="cedula">
+          CED. PROF. ESP.V.<br><b>SEP: 6820195</b>
+        </div>
+      </div>
+      <div class="right">
+        <div class="nombre">ARQ. CLAUDIA IVETTE CHAVEZ MARTINEZ</div>
+        <div class="titulo">PERITO FISCAL NO. 21 /2025</div>
+        <div class="info"><img src="https://i.imgur.com/8uc2W51.png" alt="ubicación"> Callejón del Espejo 40B, Centro, Guanajuato, GTO.</div>
+        <div class="info"><img src="https://i.imgur.com/HAZJvVz.png" alt="teléfono"> 4736901610</div>
+        <div class="info"><img src="https://i.imgur.com/UvoJ7x3.png" alt="correo"> consurbsa@gmail.com</div>
+      </div>
+    </div>
+  
+    <div class="card">
+      <div class="left">
+        <img src="https://i.imgur.com/YBARlSL.png" alt="foto">
+        <div class="cedula">
+          CED. PROF. LIC.<br><b>SEP: 2342111</b>
+        </div>
+      </div>
+      <div class="right">
+        <div class="nombre">ING. JESUS SERGIO ARRONA MARTINEZ</div>
+        <div class="titulo">PERITO FISCAL NO. 28 /2025</div>
+        <div class="info"><img src="https://i.imgur.com/8uc2W51.png" alt="ubicación"> Callejón Cañadita de Vazquez 15 BIS, Pastita, Guanajuato, GTO.</div>
+        <div class="info"><img src="https://i.imgur.com/HAZJvVz.png" alt="teléfono"> 4737374171</div>
+        <div class="info"><img src="https://i.imgur.com/UvoJ7x3.png" alt="correo"> arrona1964@gmail.com</div>
+      </div>
+    </div>
+  
+    <div class="card">
+      <div class="left">
+        <img src="https://i.imgur.com/HKSBBge.png" alt="foto">
+        <div class="cedula">
+          CED. PROF. ESP.V.<br><b>SEP: 2585716</b>
+        </div>
+      </div>
+      <div class="right">
+        <div class="nombre">ARQ. MYRNA BERENICE MARTINEZ MONTERO</div>
+        <div class="titulo">PERITO FISCAL NO. 20 /2025</div>
+        <div class="info"><img src="https://i.imgur.com/8uc2W51.png" alt="ubicación"> Mexiamora 73, Centro, Guanajuato, GTO.</div>
+        <div class="info"><img src="https://i.imgur.com/HAZJvVz.png" alt="teléfono"> 4737339478</div>
+        <div class="info"><img src="https://i.imgur.com/UvoJ7x3.png" alt="correo"> myrcar1220@gmail.com</div>
+      </div>
+    </div>
+  
+    <div class="card">
+      <div class="left">
+        <img src="https://i.imgur.com/YBARlSL.png" alt="foto">
+        <div class="cedula">
+          CED. PROF. LIC.<br><b>SEG: 20875</b>
+        </div>
+      </div>
+      <div class="right">
+        <div class="nombre">ING.  GERARDO  MORENO MONTIEL </div>
+        <div class="titulo">PERITO FISCAL NO. 96 /2025</div>
+        <div class="info"><img src="https://i.imgur.com/8uc2W51.png" alt="ubicación"> Calle sin nombre SN  , La Presita, Guanajuato, GTO.</div>
+        <div class="info"><img src="https://i.imgur.com/HAZJvVz.png" alt="teléfono"> 4731653782</div>
+        <div class="info"><img src="https://i.imgur.com/UvoJ7x3.png" alt="correo"> gerardo.montiel.moreno@gmail.com</div>
+      </div>
+    </div>
+  
+    <div class="card">
+      <div class="left">
+        <img src="https://i.imgur.com/YBARlSL.png" alt="foto">
+        <div class="cedula">
+          CED. PROF. ESP.V.<br><b>SEP: 4549369</b>
+        </div>
+      </div>
+      <div class="right">
+        <div class="nombre">ING. SALVADOR JUAREZ MOSQUEDA</div>
+        <div class="titulo">PERITO FISCAL NO. 2 /2025</div>
+        <div class="info"><img src="https://i.imgur.com/8uc2W51.png" alt="ubicación"> Circuito Don Quijote 77, Haciendas de Marfil, Guanajuato, GTO.</div>
+        <div class="info"><img src="https://i.imgur.com/HAZJvVz.png" alt="teléfono"> 4731623652</div>
+        <div class="info"><img src="https://i.imgur.com/UvoJ7x3.png" alt="correo"> mosquedajuarezs@gmail.com</div>
+      </div>
+    </div>
+  
+    <div class="card">
+      <div class="left">
+        <img src="https://i.imgur.com/YBARlSL.png" alt="foto">
+        <div class="cedula">
+          CED. PROF. ESP.V.<br><b>SEP: 14363589</b>
+        </div>
+      </div>
+      <div class="right">
+        <div class="nombre">ING. MIGUEL  ADOLFO MARTÍNEZ MOSQUEDA</div>
+        <div class="titulo">PERITO FISCAL NO. 75 /2025</div>
+        <div class="info"><img src="https://i.imgur.com/8uc2W51.png" alt="ubicación"> Calle Camino Real 1, Puerto de Santa Rosa, Guanajuato, GTO.</div>
+        <div class="info"><img src="https://i.imgur.com/HAZJvVz.png" alt="teléfono"> 4731853983</div>
+        <div class="info"><img src="https://i.imgur.com/UvoJ7x3.png" alt="correo"> mosqueda.06.2@gmail.com</div>
+      </div>
+    </div>
+  
+    <div class="card">
+      <div class="left">
+        <img src="https://i.imgur.com/YBARlSL.png" alt="foto">
+        <div class="cedula">
+          CED. PROF. LIC.<br><b>SEP: 12353431</b>
+        </div>
+      </div>
+      <div class="right">
+        <div class="nombre">ARQ. BENJAMIN MACIAS NAVARRETE</div>
+        <div class="titulo">PERITO FISCAL NO. 62 /2025</div>
+        <div class="info"><img src="https://i.imgur.com/8uc2W51.png" alt="ubicación"> Residencial Marfil Edificio 8 Depto. A, Burocrata, Guanajuato, GTO.</div>
+        <div class="info"><img src="https://i.imgur.com/HAZJvVz.png" alt="teléfono"> 4737385541</div>
+        <div class="info"><img src="https://i.imgur.com/UvoJ7x3.png" alt="correo"> bigproject.bnm@gmail.com</div>
+      </div>
+    </div>
+  
+    <div class="card">
+      <div class="left">
+        <img src="https://i.imgur.com/YBARlSL.png" alt="foto">
+        <div class="cedula">
+          CED. PROF. LIC.<br><b>SEP: 13187423</b>
+        </div>
+      </div>
+      <div class="right">
+        <div class="nombre">ING. JOSE LUIS AGUIRRE NIETO</div>
+        <div class="titulo">PERITO FISCAL NO. 85 /2025</div>
+        <div class="info"><img src="https://i.imgur.com/8uc2W51.png" alt="ubicación"> Francisco Villa SN, Puentecillas, Guanajuato, GTO.</div>
+        <div class="info"><img src="https://i.imgur.com/HAZJvVz.png" alt="teléfono"> 4737376181</div>
+        <div class="info"><img src="https://i.imgur.com/UvoJ7x3.png" alt="correo"> sitba2023@gmail.com</div>
+      </div>
+    </div>
+  
+    <div class="card">
+      <div class="left">
+        <img src="https://i.imgur.com/YBARlSL.png" alt="foto">
+        <div class="cedula">
+          CED. PROF. LIC.<br><b>SEP: 11418009</b>
+        </div>
+      </div>
+      <div class="right">
+        <div class="nombre">ARQ. JORGE ALBERTO NAJERA OGAZ</div>
+        <div class="titulo">PERITO FISCAL NO. 5 /2025</div>
+        <div class="info"><img src="https://i.imgur.com/8uc2W51.png" alt="ubicación"> Calle de Enmedio 10, Cerro de Los Leones, Guanajuato, GTO.</div>
+        <div class="info"><img src="https://i.imgur.com/HAZJvVz.png" alt="teléfono"> 4731030381</div>
+        <div class="info"><img src="https://i.imgur.com/UvoJ7x3.png" alt="correo"> jogaz24.jo@gmail.com</div>
+      </div>
+    </div>
+  
+    <div class="card">
+      <div class="left">
+        <img src="https://i.imgur.com/YBARlSL.png" alt="foto">
+        <div class="cedula">
+          CED. PROF. LIC.<br><b>SEP: 5552511</b>
+        </div>
+      </div>
+      <div class="right">
+        <div class="nombre">ARQ. ALEJANDRO TORRES OGAZ</div>
+        <div class="titulo">PERITO FISCAL NO. 25 /2025</div>
+        <div class="info"><img src="https://i.imgur.com/8uc2W51.png" alt="ubicación"> Loma de Los Santos 3, Marfil, Guanajuato, GTO.</div>
+        <div class="info"><img src="https://i.imgur.com/HAZJvVz.png" alt="teléfono"> 4731292869</div>
+        <div class="info"><img src="https://i.imgur.com/UvoJ7x3.png" alt="correo"> arq.alexogaz5@gmail.com</div>
+      </div>
+    </div>
+  
+    <div class="card">
+      <div class="left">
+        <img src="https://i.imgur.com/YBARlSL.png" alt="foto">
+        <div class="cedula">
+          CED. PROF. ESP.V.<br><b>SEP: 13604394</b>
+        </div>
+      </div>
+      <div class="right">
+        <div class="nombre">ARQ. ULISES ALEJANDRO LUGO OLIVA</div>
+        <div class="titulo">PERITO FISCAL NO. 81 /2025</div>
+        <div class="info"><img src="https://i.imgur.com/8uc2W51.png" alt="ubicación"> Camino a la Presa Del Pirul 1, Pueblito de Rocha, Guanajuato, GTO.</div>
+        <div class="info"><img src="https://i.imgur.com/HAZJvVz.png" alt="teléfono"> 4621251646</div>
+        <div class="info"><img src="https://i.imgur.com/UvoJ7x3.png" alt="correo"> puntovaluacion@gmail.com</div>
+      </div>
+    </div>
+  
+    <div class="card">
+      <div class="left">
+        <img src="https://i.imgur.com/YBARlSL.png" alt="foto">
+        <div class="cedula">
+          CED. PROF. LIC.<br><b>SEP: 11114014</b>
+        </div>
+      </div>
+      <div class="right">
+        <div class="nombre">ING. LUIS FERNANDO RODRIGUEZ OLMOS</div>
+        <div class="titulo">PERITO FISCAL NO. 61 /2025</div>
+        <div class="info"><img src="https://i.imgur.com/8uc2W51.png" alt="ubicación"> Callejón de la Venadita 10, El Carrizo, Guanajuato, GTO.</div>
+        <div class="info"><img src="https://i.imgur.com/HAZJvVz.png" alt="teléfono"> 4731108146</div>
+        <div class="info"><img src="https://i.imgur.com/UvoJ7x3.png" alt="correo"> ing.lfor@hotmail.com</div>
+      </div>
+    </div>
+  
+    <div class="card">
+      <div class="left">
+        <img src="https://i.imgur.com/YBARlSL.png" alt="foto">
+        <div class="cedula">
+          CED. PROF. LIC.<br><b>SEP: 1364072</b>
+        </div>
+      </div>
+      <div class="right">
+        <div class="nombre">ING. FIDEL CERVANTES OLMOS</div>
+        <div class="titulo">PERITO FISCAL NO. 71 /2025</div>
+        <div class="info"><img src="https://i.imgur.com/8uc2W51.png" alt="ubicación"> Venadita 10-5, Maravillas, Guanajuato, GTO.</div>
+        <div class="info"><img src="https://i.imgur.com/HAZJvVz.png" alt="teléfono"> 4737324708</div>
+        <div class="info"><img src="https://i.imgur.com/UvoJ7x3.png" alt="correo"> santafe64@hotmail.com</div>
+      </div>
+    </div>
+  
+    <div class="card">
+      <div class="left">
+        <img src="https://i.imgur.com/YBARlSL.png" alt="foto">
+        <div class="cedula">
+          CED. PROF. LIC.<br><b>SEP: 7364153</b>
+        </div>
+      </div>
+      <div class="right">
+        <div class="nombre">ING. CESAR LEONARDO LOPEZ ORNELAS </div>
+        <div class="titulo">PERITO FISCAL NO. 86 /2025</div>
+        <div class="info"><img src="https://i.imgur.com/8uc2W51.png" alt="ubicación"> Hacienda Santa Ana del Conde , Ex Hda. Santa Teresa, Guanajuato, GTO.</div>
+        <div class="info"><img src="https://i.imgur.com/HAZJvVz.png" alt="teléfono"> 4737387241</div>
+        <div class="info"><img src="https://i.imgur.com/UvoJ7x3.png" alt="correo"> glenat.of@gmail.com</div>
+      </div>
+    </div>
+  
+    <div class="card">
+      <div class="left">
+        <img src="https://i.imgur.com/YBARlSL.png" alt="foto">
+        <div class="cedula">
+          CED. PROF. ESP.V.<br><b>SEP: 13245568</b>
+        </div>
+      </div>
+      <div class="right">
+        <div class="nombre">ING. JOSE FRANCISCO RODRIGUEZ ORTIZ</div>
+        <div class="titulo">PERITO FISCAL NO. 76 /2025</div>
+        <div class="info"><img src="https://i.imgur.com/8uc2W51.png" alt="ubicación"> Andador de Los Rebaños 6-1, Las Teresas, Guanajuato, GTO.</div>
+        <div class="info"><img src="https://i.imgur.com/HAZJvVz.png" alt="teléfono"> 4721154714</div>
+        <div class="info"><img src="https://i.imgur.com/UvoJ7x3.png" alt="correo"> josfco170288@gmail.com</div>
+      </div>
+    </div>
+  
+    <div class="card">
+      <div class="left">
+        <img src="https://i.imgur.com/YBARlSL.png" alt="foto">
+        <div class="cedula">
+          CED. PROF. LIC.<br><b>SEP: 9662686</b>
+        </div>
+      </div>
+      <div class="right">
+        <div class="nombre">ING. CLAUDIO VALENTINO RODRIGUEZ PALACIOS</div>
+        <div class="titulo">PERITO FISCAL NO. 13 /2025</div>
+        <div class="info"><img src="https://i.imgur.com/8uc2W51.png" alt="ubicación"> Callejón Griteria 16, Centro, Guanajuato, GTO.</div>
+        <div class="info"><img src="https://i.imgur.com/HAZJvVz.png" alt="teléfono"> 4731247929</div>
+        <div class="info"><img src="https://i.imgur.com/UvoJ7x3.png" alt="correo"> claudiopalacios518@gmail.com</div>
+      </div>
+    </div>
+  
+    <div class="card">
+      <div class="left">
+        <img src="https://i.imgur.com/YBARlSL.png" alt="foto">
+        <div class="cedula">
+          CED. PROF. ESP.V.<br><b>SEP: 14418029</b>
+        </div>
+      </div>
+      <div class="right">
+        <div class="nombre">ING.  HECTOR DANIEL MORALES PALAFOX</div>
+        <div class="titulo">PERITO FISCAL NO. 90 /2025</div>
+        <div class="info"><img src="https://i.imgur.com/8uc2W51.png" alt="ubicación"> Mexiamora 72, Centro, Guanajuato, GTO.</div>
+        <div class="info"><img src="https://i.imgur.com/HAZJvVz.png" alt="teléfono"> 4736528380</div>
+        <div class="info"><img src="https://i.imgur.com/UvoJ7x3.png" alt="correo"> daniel90hdpm@gmail.com</div>
+      </div>
+    </div>
+  
+    <div class="card">
+      <div class="left">
+        <img src="https://i.imgur.com/HKSBBge.png" alt="foto">
+        <div class="cedula">
+          CED. PROF. MTRIA.<br><b>SEP: 11750581</b>
+        </div>
+      </div>
+      <div class="right">
+        <div class="nombre">ARQ. SUSANA GARCIA PEREZ</div>
+        <div class="titulo">PERITO FISCAL NO. 23 /2025</div>
+        <div class="info"><img src="https://i.imgur.com/8uc2W51.png" alt="ubicación"> Subida De Mellado 9, Mellado, Guanajuato, GTO.</div>
+        <div class="info"><img src="https://i.imgur.com/HAZJvVz.png" alt="teléfono"> 4731166401</div>
+        <div class="info"><img src="https://i.imgur.com/UvoJ7x3.png" alt="correo"> arqsperezga@gmail.com</div>
+      </div>
+    </div>
+  
+    <div class="card">
+      <div class="left">
+        <img src="https://i.imgur.com/HKSBBge.png" alt="foto">
+        <div class="cedula">
+          CED. PROF. MTRIA.<br><b>SEP: 11308001</b>
+        </div>
+      </div>
+      <div class="right">
+        <div class="nombre">ARQ. MARIA ELENA MARQUEZ PEREZ</div>
+        <div class="titulo">PERITO FISCAL NO. 47 /2025</div>
+        <div class="info"><img src="https://i.imgur.com/8uc2W51.png" alt="ubicación"> Sección 7 Casa 2, Noria Alta, Guanajuato, GTO.</div>
+        <div class="info"><img src="https://i.imgur.com/HAZJvVz.png" alt="teléfono"> 4737374145</div>
+        <div class="info"><img src="https://i.imgur.com/UvoJ7x3.png" alt="correo"> valuacionregion.gto@gmail.com</div>
+      </div>
+    </div>
+  
+    <div class="card">
+      <div class="left">
+        <img src="https://i.imgur.com/YBARlSL.png" alt="foto">
+        <div class="cedula">
+          CED. PROF. ESP.V.<br><b>SEP: 8935879</b>
+        </div>
+      </div>
+      <div class="right">
+        <div class="nombre">ARQ. CESAR MIGUEL FERRO RAMIREZ</div>
+        <div class="titulo">PERITO FISCAL NO. 24 /2025</div>
+        <div class="info"><img src="https://i.imgur.com/8uc2W51.png" alt="ubicación"> Agora del Baratillo Despacho 4, Centro, Guanajuato, GTO.</div>
+        <div class="info"><img src="https://i.imgur.com/HAZJvVz.png" alt="teléfono"> 4731808871</div>
+        <div class="info"><img src="https://i.imgur.com/UvoJ7x3.png" alt="correo"> cesar.rferro@gmail.com</div>
+      </div>
+    </div>
+  
+    <div class="card">
+      <div class="left">
+        <img src="https://i.imgur.com/YBARlSL.png" alt="foto">
+        <div class="cedula">
+          CED. PROF. LIC.<br><b>SEP: 9250178</b>
+        </div>
+      </div>
+      <div class="right">
+        <div class="nombre">ING. HECTOR ALAMILLA RAMIREZ</div>
+        <div class="titulo">PERITO FISCAL NO. 32 /2025</div>
+        <div class="info"><img src="https://i.imgur.com/8uc2W51.png" alt="ubicación"> Servidumbre de Paso Lote 5, Ex Hda. Santa Teresa, Guanajuato, GTO.</div>
+        <div class="info"><img src="https://i.imgur.com/HAZJvVz.png" alt="teléfono"> 4731412951</div>
+        <div class="info"><img src="https://i.imgur.com/UvoJ7x3.png" alt="correo"> despacho.alamilla@gmail.com</div>
+      </div>
+    </div>
+  
+    <div class="card">
+      <div class="left">
+        <img src="https://i.imgur.com/HKSBBge.png" alt="foto">
+        <div class="cedula">
+          CED. PROF. LIC.<br><b>SEP: 14740204</b>
+        </div>
+      </div>
+      <div class="right">
+        <div class="nombre">ING.  MARTHA BERENICE OLMOS RANGEL </div>
+        <div class="titulo">PERITO FISCAL NO. 92 /2025</div>
+        <div class="info"><img src="https://i.imgur.com/8uc2W51.png" alt="ubicación"> Calle sin nombre SN, Localidad El Tejabán , Guanajuato, GTO.</div>
+        <div class="info"><img src="https://i.imgur.com/HAZJvVz.png" alt="teléfono"> 4731370409</div>
+        <div class="info"><img src="https://i.imgur.com/UvoJ7x3.png" alt="correo"> marthabrangelo@gmail.com</div>
+      </div>
+    </div>
+  
+    <div class="card">
+      <div class="left">
+        <img src="https://i.imgur.com/YBARlSL.png" alt="foto">
+        <div class="cedula">
+          CED. PROF. LIC.<br><b>SEP: 5218809</b>
+        </div>
+      </div>
+      <div class="right">
+        <div class="nombre">ARQ. CARLOS JAIME CONTRERAS RAYGOZA</div>
+        <div class="titulo">PERITO FISCAL NO. 22 /2025</div>
+        <div class="info"><img src="https://i.imgur.com/8uc2W51.png" alt="ubicación"> Avenida 5 de Mayo 26-2, Centro, Silao, GTO.</div>
+        <div class="info"><img src="https://i.imgur.com/HAZJvVz.png" alt="teléfono"> 4727371989</div>
+        <div class="info"><img src="https://i.imgur.com/UvoJ7x3.png" alt="correo"> carlosjraygoza@hotmail.com</div>
+      </div>
+    </div>
+  
+    <div class="card">
+      <div class="left">
+        <img src="https://i.imgur.com/YBARlSL.png" alt="foto">
+        <div class="cedula">
+          CED. PROF. ESP.V.<br><b>SEG: 3591</b>
+        </div>
+      </div>
+      <div class="right">
+        <div class="nombre">ARQ. RUBEN DARIO MARTINEZ RESENDIZ</div>
+        <div class="titulo">PERITO FISCAL NO. 33 /2025</div>
+        <div class="info"><img src="https://i.imgur.com/8uc2W51.png" alt="ubicación"> Carr. Panoramica Normal Presa km. 7.5, Cerro de Los Leones, Guanajuato, GTO.</div>
+        <div class="info"><img src="https://i.imgur.com/HAZJvVz.png" alt="teléfono"> 4773483955</div>
+        <div class="info"><img src="https://i.imgur.com/UvoJ7x3.png" alt="correo"> rdrconstruccion@gmail.com</div>
+      </div>
+    </div>
+  
+    <div class="card">
+      <div class="left">
+        <img src="https://i.imgur.com/YBARlSL.png" alt="foto">
+        <div class="cedula">
+          CED. PROF. LIC.<br><b>SEP: 1996665</b>
+        </div>
+      </div>
+      <div class="right">
+        <div class="nombre">ARQ. JOSE  ORTEGA RIVERA</div>
+        <div class="titulo">PERITO FISCAL NO. 63 /2025</div>
+        <div class="info"><img src="https://i.imgur.com/8uc2W51.png" alt="ubicación"> Calle Don Juan Jimenez 8, Los Alcaldes, Guanajuato, GTO.</div>
+        <div class="info"><img src="https://i.imgur.com/HAZJvVz.png" alt="teléfono"> 4731621070</div>
+        <div class="info"><img src="https://i.imgur.com/UvoJ7x3.png" alt="correo"> arriverajose@hotmail.com</div>
+      </div>
+    </div>
+  
+    <div class="card">
+      <div class="left">
+        <img src="https://i.imgur.com/YBARlSL.png" alt="foto">
+        <div class="cedula">
+          CED. PROF. LIC.<br><b>SEP: 1672190</b>
+        </div>
+      </div>
+      <div class="right">
+        <div class="nombre">ING. RUBEN ANTONIO NIETO RODRIGUEZ</div>
+        <div class="titulo">PERITO FISCAL NO. 9 /2025</div>
+        <div class="info"><img src="https://i.imgur.com/8uc2W51.png" alt="ubicación"> Paseo de la Presa 111, Paseo de La Presa , Guanajuato, GTO.</div>
+        <div class="info"><img src="https://i.imgur.com/HAZJvVz.png" alt="teléfono"> 4737311079</div>
+        <div class="info"><img src="https://i.imgur.com/UvoJ7x3.png" alt="correo"> rrodriguezn@hotmail.com</div>
+      </div>
+    </div>
+  
+    <div class="card">
+      <div class="left">
+        <img src="https://i.imgur.com/YBARlSL.png" alt="foto">
+        <div class="cedula">
+          CED. PROF. LIC.<br><b>SEP: 1642144</b>
+        </div>
+      </div>
+      <div class="right">
+        <div class="nombre">ING. SANTIAGO CEJA RODRIGUEZ</div>
+        <div class="titulo">PERITO FISCAL NO. 37 /2025</div>
+        <div class="info"><img src="https://i.imgur.com/8uc2W51.png" alt="ubicación"> Callejón Cañitos 4, Centro, Guanajuato, GTO.</div>
+        <div class="info"><img src="https://i.imgur.com/HAZJvVz.png" alt="teléfono"> 4731081201</div>
+        <div class="info"><img src="https://i.imgur.com/UvoJ7x3.png" alt="correo"> rodriguezcejasan@yahoo.com.mx</div>
+      </div>
+    </div>
+  
+    <div class="card">
+      <div class="left">
+        <img src="https://i.imgur.com/YBARlSL.png" alt="foto">
+        <div class="cedula">
+          CED. PROF. LIC.<br><b>SEG: 2391449</b>
+        </div>
+      </div>
+      <div class="right">
+        <div class="nombre">ING. JOSE LUIS PARRA SALAS</div>
+        <div class="titulo">PERITO FISCAL NO. 44 /2025</div>
+        <div class="info"><img src="https://i.imgur.com/8uc2W51.png" alt="ubicación"> Alhóndiga 49 Interior 4, San Javier, Guanajuato, GTO.</div>
+        <div class="info"><img src="https://i.imgur.com/HAZJvVz.png" alt="teléfono"> 3316013573</div>
+        <div class="info"><img src="https://i.imgur.com/UvoJ7x3.png" alt="correo"> ingjlsalas3@hotmail.com</div>
+      </div>
+    </div>
+  
+    <div class="card">
+      <div class="left">
+        <img src="https://i.imgur.com/HKSBBge.png" alt="foto">
+        <div class="cedula">
+          CED. PROF. LIC.<br><b>SEP: 12513310</b>
+        </div>
+      </div>
+      <div class="right">
+        <div class="nombre">ARQ. SANDRA VALLEJO SALDAÑA</div>
+        <div class="titulo">PERITO FISCAL NO. 69 /2025</div>
+        <div class="info"><img src="https://i.imgur.com/8uc2W51.png" alt="ubicación"> Calle Paredón Mza 17 Lote 15, El Edén, Guanajuato, GTO.</div>
+        <div class="info"><img src="https://i.imgur.com/HAZJvVz.png" alt="teléfono"> 4181490233</div>
+        <div class="info"><img src="https://i.imgur.com/UvoJ7x3.png" alt="correo"> arq.sandravallejo@gmail.com</div>
+      </div>
+    </div>
+  
+    <div class="card">
+      <div class="left">
+        <img src="https://i.imgur.com/HKSBBge.png" alt="foto">
+        <div class="cedula">
+          CED. PROF. ESP.V.<br><b>SEG: 27967</b>
+        </div>
+      </div>
+      <div class="right">
+        <div class="nombre">ING. ILSE GUADALUPE TORO SANCHEZ</div>
+        <div class="titulo">PERITO FISCAL NO. 15 /2025</div>
+        <div class="info"><img src="https://i.imgur.com/8uc2W51.png" alt="ubicación"> Burocrata 6, Burocrata, Guanajuato, GTO.</div>
+        <div class="info"><img src="https://i.imgur.com/HAZJvVz.png" alt="teléfono"> 4731343169</div>
+        <div class="info"><img src="https://i.imgur.com/UvoJ7x3.png" alt="correo"> geotorogt@gmail.com</div>
+      </div>
+    </div>
+  
+    <div class="card">
+      <div class="left">
+        <img src="https://i.imgur.com/YBARlSL.png" alt="foto">
+        <div class="cedula">
+          CED. PROF. MTRIA.<br><b>SEP: 11631110</b>
+        </div>
+      </div>
+      <div class="right">
+        <div class="nombre">ARQ. RUBEN  SEGURA SANDOVAL</div>
+        <div class="titulo">PERITO FISCAL NO. 95 /2025</div>
+        <div class="info"><img src="https://i.imgur.com/8uc2W51.png" alt="ubicación"> Calle Canarias 108, Residencia Horizontes, Irapuato, GTO.</div>
+        <div class="info"><img src="https://i.imgur.com/HAZJvVz.png" alt="teléfono"> 4621925125</div>
+        <div class="info"><img src="https://i.imgur.com/UvoJ7x3.png" alt="correo"> arq.rubensandoval82@gmail.com</div>
+      </div>
+    </div>
+  
+    <div class="card">
+      <div class="left">
+        <img src="https://i.imgur.com/YBARlSL.png" alt="foto">
+        <div class="cedula">
+          CED. PROF. LIC.<br><b>SEP: 3745446</b>
+        </div>
+      </div>
+      <div class="right">
+        <div class="nombre">ARQ. MIGUEL ANGEL LÓPEZ SEGOVIANO</div>
+        <div class="titulo">PERITO FISCAL NO. 7 /2025</div>
+        <div class="info"><img src="https://i.imgur.com/8uc2W51.png" alt="ubicación"> Lomas Del Rio Mza 19 Lote 9 SN, Lomas de Cervera, Guanajuato, GTO.</div>
+        <div class="info"><img src="https://i.imgur.com/HAZJvVz.png" alt="teléfono"> 4736882399</div>
+        <div class="info"><img src="https://i.imgur.com/UvoJ7x3.png" alt="correo"> interarq12@gmail.com</div>
+      </div>
+    </div>
+  
+    <div class="card">
+      <div class="left">
+        <img src="https://i.imgur.com/YBARlSL.png" alt="foto">
+        <div class="cedula">
+          CED. PROF. ESP.V.<br><b>SEP: 12142676</b>
+        </div>
+      </div>
+      <div class="right">
+        <div class="nombre">ING. ALEJANDRO MENA SEGOVIANO</div>
+        <div class="titulo">PERITO FISCAL NO. 68 /2025</div>
+        <div class="info"><img src="https://i.imgur.com/8uc2W51.png" alt="ubicación"> Calle Salamanca 73, Santa Teresa, Guanajuato, GTO.</div>
+        <div class="info"><img src="https://i.imgur.com/HAZJvVz.png" alt="teléfono"> 4772723174</div>
+        <div class="info"><img src="https://i.imgur.com/UvoJ7x3.png" alt="correo"> aasegoviano@hotmail.com</div>
+      </div>
+    </div>
+  
+    <div class="card">
+      <div class="left">
+        <img src="https://i.imgur.com/YBARlSL.png" alt="foto">
+        <div class="cedula">
+          CED. PROF. ESP.V.<br><b>SEP: 11797211</b>
+        </div>
+      </div>
+      <div class="right">
+        <div class="nombre">ING. MIGUEL DE JESUS ALCANTARA SOBERANO</div>
+        <div class="titulo">PERITO FISCAL NO. 30 /2025</div>
+        <div class="info"><img src="https://i.imgur.com/8uc2W51.png" alt="ubicación"> Jardin de La Reforma 13, Centro, Guanajuato, GTO.</div>
+        <div class="info"><img src="https://i.imgur.com/HAZJvVz.png" alt="teléfono"> 4731190669</div>
+        <div class="info"><img src="https://i.imgur.com/UvoJ7x3.png" alt="correo"> mglsoberano@gmail.com</div>
+      </div>
+    </div>
+  
+    <div class="card">
+      <div class="left">
+        <img src="https://i.imgur.com/YBARlSL.png" alt="foto">
+        <div class="cedula">
+          CED. PROF. LIC.<br><b>SEP: 2110192</b>
+        </div>
+      </div>
+      <div class="right">
+        <div class="nombre">ING. MANUEL ALFREDO BAEZ TORRES</div>
+        <div class="titulo">PERITO FISCAL NO. 53 /2025</div>
+        <div class="info"><img src="https://i.imgur.com/8uc2W51.png" alt="ubicación"> Ignacio Reyes Retana SN, El Zangarro, Guanajuato, GTO.</div>
+        <div class="info"><img src="https://i.imgur.com/HAZJvVz.png" alt="teléfono"> 4626600554</div>
+        <div class="info"><img src="https://i.imgur.com/UvoJ7x3.png" alt="correo"> ingmanueltorresbaez@yahoo.com.mx</div>
+      </div>
+    </div>
+  
+    <div class="card">
+      <div class="left">
+        <img src="https://i.imgur.com/YBARlSL.png" alt="foto">
+        <div class="cedula">
+          CED. PROF. LIC.<br><b>SEP: 13070682</b>
+        </div>
+      </div>
+      <div class="right">
+        <div class="nombre">ARQ. CRISTIAN ALEJANDRO SOTO TORRES</div>
+        <div class="titulo">PERITO FISCAL NO. 59 /2025</div>
+        <div class="info"><img src="https://i.imgur.com/8uc2W51.png" alt="ubicación"> Calzada de Tepetapa 92, Centro, Guanajuato, GTO.</div>
+        <div class="info"><img src="https://i.imgur.com/HAZJvVz.png" alt="teléfono"> 4731228383</div>
+        <div class="info"><img src="https://i.imgur.com/UvoJ7x3.png" alt="correo"> arq.cristiantorres@dictallab.com</div>
+      </div>
+    </div>
+  
+    <div class="card">
+      <div class="left">
+        <img src="https://i.imgur.com/YBARlSL.png" alt="foto">
+        <div class="cedula">
+          CED. PROF. LIC.<br><b>SEP: 2935745</b>
+        </div>
+      </div>
+      <div class="right">
+        <div class="nombre">ING. RUBEN ALCANTAR TOVAR</div>
+        <div class="titulo">PERITO FISCAL NO. 4 /2025</div>
+        <div class="info"><img src="https://i.imgur.com/8uc2W51.png" alt="ubicación"> Calle Prol. Mineral Valenciana 6, Marfil, Guanajuato, GTO.</div>
+        <div class="info"><img src="https://i.imgur.com/HAZJvVz.png" alt="teléfono"> 4737332183</div>
+        <div class="info"><img src="https://i.imgur.com/UvoJ7x3.png" alt="correo"> rubentovaral@gmail.com</div>
+      </div>
+    </div>
+  
+    <div class="card">
+      <div class="left">
+        <img src="https://i.imgur.com/YBARlSL.png" alt="foto">
+        <div class="cedula">
+          CED. PROF. LIC.<br><b>SEP: 491751</b>
+        </div>
+      </div>
+      <div class="right">
+        <div class="nombre">ING. JUAN MANUEL ALCANTAR TOVAR</div>
+        <div class="titulo">PERITO FISCAL NO. 14 /2025</div>
+        <div class="info"><img src="https://i.imgur.com/8uc2W51.png" alt="ubicación"> Calle Juan Valle 11 P.A., Centro, Guanajuato, GTO.</div>
+        <div class="info"><img src="https://i.imgur.com/HAZJvVz.png" alt="teléfono"> 4737561391</div>
+        <div class="info"><img src="https://i.imgur.com/UvoJ7x3.png" alt="correo"> avaluo56@hotmail.com</div>
+      </div>
+    </div>
+  
+    <div class="card">
+      <div class="left">
+        <img src="https://i.imgur.com/YBARlSL.png" alt="foto">
+        <div class="cedula">
+          CED. PROF. ESP.V.<br><b>SEG: 21734</b>
+        </div>
+      </div>
+      <div class="right">
+        <div class="nombre">ING. GERARDO FLORES TRUJILLO</div>
+        <div class="titulo">PERITO FISCAL NO. 11 /2025</div>
+        <div class="info"><img src="https://i.imgur.com/8uc2W51.png" alt="ubicación"> Loma de Los Santos 1, Marfil, Guanajuato, GTO.</div>
+        <div class="info"><img src="https://i.imgur.com/HAZJvVz.png" alt="teléfono"> 4737331050</div>
+        <div class="info"><img src="https://i.imgur.com/UvoJ7x3.png" alt="correo"> captura.avaluos2024@gmail.com</div>
+      </div>
+    </div>
+  
+    <div class="card">
+      <div class="left">
+        <img src="https://i.imgur.com/HKSBBge.png" alt="foto">
+        <div class="cedula">
+          CED. PROF. LIC.<br><b>SEP: 9384655</b>
+        </div>
+      </div>
+      <div class="right">
+        <div class="nombre">ARQ. TERESITA DE JESUS BRIONES URIBE</div>
+        <div class="titulo">PERITO FISCAL NO. 26 /2025</div>
+        <div class="info"><img src="https://i.imgur.com/8uc2W51.png" alt="ubicación"> Noria Alta 30, Noria Alta, Guanajuato, GTO.</div>
+        <div class="info"><img src="https://i.imgur.com/HAZJvVz.png" alt="teléfono"> 4737377682</div>
+        <div class="info"><img src="https://i.imgur.com/UvoJ7x3.png" alt="correo"> uri.briones@gmail.com</div>
+      </div>
+    </div>
+  
+    <div class="card">
+      <div class="left">
+        <img src="https://i.imgur.com/YBARlSL.png" alt="foto">
+        <div class="cedula">
+          CED. PROF. LIC.<br><b>SEP: 683448</b>
+        </div>
+      </div>
+      <div class="right">
+        <div class="nombre">ARQ. MANUEL CASTAÑEDA VALADEZ</div>
+        <div class="titulo">PERITO FISCAL NO. 27 /2025</div>
+        <div class="info"><img src="https://i.imgur.com/8uc2W51.png" alt="ubicación"> Calle Cantarranas 24, Centro, Guanajuato, GTO.</div>
+        <div class="info"><img src="https://i.imgur.com/HAZJvVz.png" alt="teléfono"> 4737323534</div>
+        <div class="info"><img src="https://i.imgur.com/UvoJ7x3.png" alt="correo"> vacigsa@gmail.com</div>
+      </div>
+    </div>
+  
+    <div class="card">
+      <div class="left">
+        <img src="https://i.imgur.com/HKSBBge.png" alt="foto">
+        <div class="cedula">
+          CED. PROF. ESP.V.<br><b>SEP: 14638118</b>
+        </div>
+      </div>
+      <div class="right">
+        <div class="nombre">ARQ. ADRIANA ISABEL MENDEZ VARGAS </div>
+        <div class="titulo">PERITO FISCAL NO. 78 /2025</div>
+        <div class="info"><img src="https://i.imgur.com/8uc2W51.png" alt="ubicación"> San Juan Bautista 4, Centro, Guanajuato, GTO.</div>
+        <div class="info"><img src="https://i.imgur.com/HAZJvVz.png" alt="teléfono"> 4731184514</div>
+        <div class="info"><img src="https://i.imgur.com/UvoJ7x3.png" alt="correo"> aivm1210@gmail.com</div>
+      </div>
+    </div>
+  
+    <div class="card">
+      <div class="left">
+        <img src="https://i.imgur.com/YBARlSL.png" alt="foto">
+        <div class="cedula">
+          CED. PROF. MTRIA.<br><b>SEP: 7023883</b>
+        </div>
+      </div>
+      <div class="right">
+        <div class="nombre">ING. LUIS MANUEL SALDAÑA VAZQUEZ</div>
+        <div class="titulo">PERITO FISCAL NO. 36 /2025</div>
+        <div class="info"><img src="https://i.imgur.com/8uc2W51.png" alt="ubicación"> Andador Felipe V Mza 22 Lote 11-A, Las Terezas, Guanajuato, GTO.</div>
+        <div class="info"><img src="https://i.imgur.com/HAZJvVz.png" alt="teléfono"> 4731010544</div>
+        <div class="info"><img src="https://i.imgur.com/UvoJ7x3.png" alt="correo"> vazquezsaldana@gmail.com</div>
+      </div>
+    </div>
+  
+    <div class="card">
+      <div class="left">
+        <img src="https://i.imgur.com/YBARlSL.png" alt="foto">
+        <div class="cedula">
+          CED. PROF. LIC.<br><b>SEP: 1650914</b>
+        </div>
+      </div>
+      <div class="right">
+        <div class="nombre">ING. DAVID BARRIENTOS VELAZQUEZ</div>
+        <div class="titulo">PERITO FISCAL NO. 1 /2025</div>
+        <div class="info"><img src="https://i.imgur.com/8uc2W51.png" alt="ubicación"> Calle Cantarranas 5 Interior 5, Centro, Guanajuato, GTO.</div>
+        <div class="info"><img src="https://i.imgur.com/HAZJvVz.png" alt="teléfono"> 4737321322</div>
+        <div class="info"><img src="https://i.imgur.com/UvoJ7x3.png" alt="correo"> laminas198@hotmail.com</div>
+      </div>
+    </div>
+  
+    <div class="card">
+      <div class="left">
+        <img src="https://i.imgur.com/HKSBBge.png" alt="foto">
+        <div class="cedula">
+          CED. PROF. LIC.<br><b>SEP: 9362789</b>
+        </div>
+      </div>
+      <div class="right">
+        <div class="nombre">ING. MARIA DE LA LUZ LUNA VELAZQUEZ</div>
+        <div class="titulo">PERITO FISCAL NO. 65 /2025</div>
+        <div class="info"><img src="https://i.imgur.com/8uc2W51.png" alt="ubicación"> Callejón Copa de Oro 25, Centro, Guanajuato, GTO.</div>
+        <div class="info"><img src="https://i.imgur.com/HAZJvVz.png" alt="teléfono"> 4731141090</div>
+        <div class="info"><img src="https://i.imgur.com/UvoJ7x3.png" alt="correo"> lucy.velazquez.luna@gmail.com</div>
+      </div>
+    </div>
+  
+    <div class="card">
+      <div class="left">
+        <img src="https://i.imgur.com/HKSBBge.png" alt="foto">
+        <div class="cedula">
+          CED. PROF. LIC.<br><b>SEP: 12911695</b>
+        </div>
+      </div>
+      <div class="right">
+        <div class="nombre">ING. CLAUDIA CRISTINA LUNA VELAZQUEZ</div>
+        <div class="titulo">PERITO FISCAL NO. 66 /2025</div>
+        <div class="info"><img src="https://i.imgur.com/8uc2W51.png" alt="ubicación"> Calle Cantarranas 5 Interior 5, Centro, Guanajuato, GTO.</div>
+        <div class="info"><img src="https://i.imgur.com/HAZJvVz.png" alt="teléfono"> 4731230567</div>
+        <div class="info"><img src="https://i.imgur.com/UvoJ7x3.png" alt="correo"> cc.velazquezluna@gmail.com</div>
+      </div>
+    </div>
+  
+    <div class="card">
+      <div class="left">
+        <img src="https://i.imgur.com/YBARlSL.png" alt="foto">
+        <div class="cedula">
+          CED. PROF. LIC.<br><b>SEP: 2676068</b>
+        </div>
+      </div>
+      <div class="right">
+        <div class="nombre">ING. HUGO CAUDILLO VERGARA</div>
+        <div class="titulo">PERITO FISCAL NO. 51 /2025</div>
+        <div class="info"><img src="https://i.imgur.com/8uc2W51.png" alt="ubicación"> Callejón de Barrio Alto 40, El Carrizo, Guanajuato, GTO.</div>
+        <div class="info"><img src="https://i.imgur.com/HAZJvVz.png" alt="teléfono"> 4775827498</div>
+        <div class="info"><img src="https://i.imgur.com/UvoJ7x3.png" alt="correo"> huveca10.nvo@gmail.com</div>
+      </div>
+    </div>
+  
+    <div class="card">
+      <div class="left">
+        <img src="https://i.imgur.com/YBARlSL.png" alt="foto">
+        <div class="cedula">
+          CED. PROF. ESP.V.<br><b>SEP: 10693070</b>
+        </div>
+      </div>
+      <div class="right">
+        <div class="nombre">ING. ALBERTO LUNA YEBRA</div>
+        <div class="titulo">PERITO FISCAL NO. 34 /2025</div>
+        <div class="info"><img src="https://i.imgur.com/8uc2W51.png" alt="ubicación"> Boulevard Euquerio Guerrero km. 6.5 SN, Yerbabuena, Guanajuato, GTO.</div>
+        <div class="info"><img src="https://i.imgur.com/HAZJvVz.png" alt="teléfono"> 4731087891</div>
+        <div class="info"><img src="https://i.imgur.com/UvoJ7x3.png" alt="correo"> alyer78@yahoo.com.mx</div>
+      </div>
+    </div>
+  
+    <div class="card">
+      <div class="left">
+        <img src="https://i.imgur.com/HKSBBge.png" alt="foto">
+        <div class="cedula">
+          CED. PROF. ESP.V.<br><b>SEP: 13833687</b>
+        </div>
+      </div>
+      <div class="right">
+        <div class="nombre">ING.  JARUMY RAZO ZAPOT </div>
+        <div class="titulo">PERITO FISCAL NO. 97 /2025</div>
+        <div class="info"><img src="https://i.imgur.com/8uc2W51.png" alt="ubicación"> Calle Violeta 2, Localidad Peralta, Abasolo, GTO.</div>
+        <div class="info"><img src="https://i.imgur.com/HAZJvVz.png" alt="teléfono"> 4731205226</div>
+        <div class="info"><img src="https://i.imgur.com/UvoJ7x3.png" alt="correo"> jarumyzapot@gmail.com</div>
+      </div>
+    </div>
+  
+    <div class="card">
+      <div class="left">
+        <img src="https://i.imgur.com/HKSBBge.png" alt="foto">
+        <div class="cedula">
+          CED. PROF. ESP.V.<br><b>SEG: 26512</b>
+        </div>
+      </div>
+      <div class="right">
+        <div class="nombre">ARQ. MA. ISABEL GUTIERREZ ZAVALA</div>
+        <div class="titulo">PERITO FISCAL NO. 82 /2025</div>
+        <div class="info"><img src="https://i.imgur.com/8uc2W51.png" alt="ubicación"> Hacienda Trejo 14, Ex Hda. Santa Teresa, Guanajuato, GTO.</div>
+        <div class="info"><img src="https://i.imgur.com/HAZJvVz.png" alt="teléfono"> 4731007399</div>
+        <div class="info"><img src="https://i.imgur.com/UvoJ7x3.png" alt="correo"> maisabelzavala@gmail.com</div>
+      </div>
+    </div>
+  
+    <div class="card">
+      <div class="left">
+        <img src="https://i.imgur.com/YBARlSL.png" alt="foto">
+        <div class="cedula">
+          CED. PROF. LIC.<br><b>SEP: 1612308</b>
+        </div>
+      </div>
+      <div class="right">
+        <div class="nombre">ING. JOSE MANUEL CUEVAS ZEPEDA</div>
+        <div class="titulo">PERITO FISCAL NO. 29 /2025</div>
+        <div class="info"><img src="https://i.imgur.com/8uc2W51.png" alt="ubicación"> Arroyo del Carrizo 11A, El Carrizo, Guanajuato, GTO.</div>
+        <div class="info"><img src="https://i.imgur.com/HAZJvVz.png" alt="teléfono"> 4731415374</div>
+        <div class="info"><img src="https://i.imgur.com/UvoJ7x3.png" alt="correo"> zepedamal32@gmail.com</div>
+      </div>
+    </div>
+  
+    <div class="card">
+      <div class="left">
+        <img src="https://i.imgur.com/YBARlSL.png" alt="foto">
+        <div class="cedula">
+          CED. PROF. ESP.V.<br><b>SEP: 14551321</b>
+        </div>
+      </div>
+      <div class="right">
+        <div class="nombre">ARQ. ENRIQUE  SALVADOR RUIZ ZUÑIGA </div>
+        <div class="titulo">PERITO FISCAL NO. 39 /2025</div>
+        <div class="info"><img src="https://i.imgur.com/8uc2W51.png" alt="ubicación"> Loma de los Santos 17, Marfil, Guanajuato, GTO.</div>
+        <div class="info"><img src="https://i.imgur.com/HAZJvVz.png" alt="teléfono"> 4734834618</div>
+        <div class="info"><img src="https://i.imgur.com/UvoJ7x3.png" alt="correo"> arquitez10@gmail.com</div>
+      </div>
+    </div>
+  
+  </div>
+  <script>
+    function searchCards() {
+      const input = document.getElementById('searchInput').value.toLowerCase();
+      const cards = document.querySelectorAll('.card');
+      cards.forEach(card => {
+        const text = card.innerText.toLowerCase();
+        card.style.display = text.includes(input) ? 'flex' : 'none';
+      });
+    }
+  </script>
+</body>
+</html>
